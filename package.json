@@ -4,7 +4,11 @@
   "description": "cross-reference data combinations",
   "main": "index.js",
   "scripts": {
-    "test": "node test.js"
+    "test": "node test.js",
+    "build-release": "browserify index.js --standalone combinatorics -o combinatorics.js"
+  },
+  "browserify": {
+    "transform": [["babelify", { "presets": ["es2015"] }]]
   },
   "repository": {
     "type": "git",
@@ -17,6 +21,9 @@
   },
   "homepage": "https://github.com/hapticdata/combinatorics#readme",
   "devDependencies": {
+    "babel-preset-es2015": "^6.14.0",
+    "babelify": "^7.3.0",
+    "browserify": "^13.1.0",
     "tape": "^4.6.0"
   },
   "dependencies": {}

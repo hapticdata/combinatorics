@@ -3,7 +3,7 @@ by [Kyle Phillips](http://haptic-data.com)
 
 ![Grasshoppers Cross-Reference component](./cross-reference.jpg)
 
-Based off of Grasshoppers Cross-Reference component except it can take more than 2 arguments.
+Methods to generate combinations of values between two or more arrays. Based off of Grasshoppers Cross-Reference component except it can take more than 2 arguments.
 
 
 ```js
