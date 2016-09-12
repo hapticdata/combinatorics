@@ -1,6 +1,10 @@
 # Combinatorics (WIP)
 by [Kyle Phillips](http://haptic-data.com)
 
+```
+npm install combinatorics --save
+```
+
 ![Grasshoppers Cross-Reference component](./cross-reference.jpg)
 
 Methods to generate combinations of values between two or more arrays. Based off of Grasshoppers Cross-Reference component except it can take more than 2 arguments.
