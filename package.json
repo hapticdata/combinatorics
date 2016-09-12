@@ -1,0 +1,23 @@
+{
+  "name": "combinatorics",
+  "version": "1.0.0",
+  "description": "cross-reference data combinations",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hapticdata/combinatorics.git"
+  },
+  "author": "Kyle Phillips",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hapticdata/combinatorics/issues"
+  },
+  "homepage": "https://github.com/hapticdata/combinatorics#readme",
+  "devDependencies": {
+    "tape": "^4.6.0"
+  },
+  "dependencies": {}
+}
