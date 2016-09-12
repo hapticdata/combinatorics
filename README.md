@@ -39,3 +39,20 @@ combinatorics.holistic('ABC'.split(''), 'XYZ'.split(''), [0, 1, 2])
   [ 'B', 'Z', 2 ],
   [ 'C', 'Z', 2 ] ]
 ```
+
+## Methods
+
+### Short-list
+ * `.trimEnd(...)`
+ * `.trimStart(...)`
+ * `.interpolateShort(...)`
+
+### long-list
+ * `.repeatFirst(...)`
+ * `.repeatLast(...)`
+ * `.wrap(...)`
+ * `.flip(...)`
+ * `.holistic(...)`
+
+
+**MIT LICENSE**

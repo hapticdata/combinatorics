@@ -132,11 +132,11 @@ exports.interpolateShort = function(){
 exports.repeatFirst = function(){
 
     var result = [];
-    var max = findMax(arguments);
+    var maxArg = max(arguments);
 
-    for(var i=0; i<max.length; i++){
+    for(var i=0; i<maxArg.length; i++){
         result[i] = map(arguments, arg=>{
-            var diff = Math.abs(arg.length - max.length);
+            var diff = Math.abs(arg.length - maxArg.length);
             return arg[Math.max(i-diff, 0)];
         });
     }
@@ -154,9 +154,9 @@ exports.repeatFirst = function(){
 exports.repeatLast = function(){
 
     var result = [];
-    var max = findMax(arguments);
+    var maxArg = max(arguments);
 
-    for(var i=0; i<max.length; i++){
+    for(var i=0; i<maxArg.length; i++){
         result[i] = map(arguments, arg=> arg[Math.min(i, arg.length-1)]);
     }
 
@@ -190,9 +190,9 @@ exports.wrap = function(){
 exports.flip = function(){
 
     var result = [],
-        max = findMax(arguments);
+        maxArg = max(arguments);
 
-    for(var i=0; i<max.length; i++){
+    for(var i=0; i<maxArg.length; i++){
         result[i] = map(arguments, arg=> arg[ i < arg.length ? i : (arg.length -2 - (i-arg.length))]);
     }
 
